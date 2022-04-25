@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    border:border-box;
+}
+
+body{
+    background-image: linear-gradient(120deg, #f6d365, #fda085);
+    color: whitesmoke;
+    font-family: "Poppins", san-serif;
+    font-size: 1.5vw;
+    width: 100%;
+    height: 100%;
+}
+
+h1{font-size:1.80rem;}
+h2{font-size:1.5rem;}
+h3{font-size:1.25rem;}
+
+h1,h2,h3,p{
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+
+a{
+    text-decoration: none;
+    color:white;
+    font-weight:bold;
+}
+
+a:hover{
+    font-weight: bolder;
+    color:black;
+}
+
+.about div{
+    padding:1rem;
+}
+
+#home{
+    margin:auto;
+}
+
+/* Navigation */
+  
+.nav{
+    text-align: center;
+}
+
+.nav ol li{
+    text-decoration: none;
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1far);
+    padding: 2rem 1.5rem;
+}
+
+.nav ol li a{
+    text-decoration: none;
+    color: black;
+    font-size:1.25rem;
+}
+
+.nav ol li a:hover{
+    border-bottom: 0.25rem yellowgreen solid;
+}
+
+/* Profile Image */
+
+.img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+/* Body */
+.container{
+    padding-left:2%;
+    padding-right:2%;
+}
+
+/* Skills  */
+
+.skills-list ul, .social-media ul{
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    font-size:3vh;
+}
+
+.skills-list li, .social-media ul li{
+    padding: 1rem 1rem 1rem 1rem;
+    display: inline-block;
+    vertical-align: top;
+    margin: auto;
+}
+
+.skills-list li span{
+    padding:0.25rem;
+}
+
+/* Icons  */
+
+.icon-custom{
+    padding-right:0.5rem; 
+    width:3vh;
+    height:3vh;
+}
+
+/* Contact Table  */
+
+table, th, td{
+    margin: auto;
+    border: 2px solid black;
+    align-items: center;
+    border-collapse: collapse;
+    padding: 0.50rem;
+    font-size:1.5vw;
+}
+
+
+th{
+    color: black;
+}
+
+/* Map */
+
+iframe{
+    border: 2px solid black;
+    width:80%;
+    height:50vh;
+    margin:auto;
+    display:block;
+}
+
+/* Social Media  */
+.social-media a{
+    font-size:3vh;
+}
+
+@media screen and (max-width:600px){
+    .skills-list ul{
+        columns:2;
+    }
+    table, th, td{
+        font-size:3vw;
+    }
+    .social-media a, .nav ol li a{
+        font-size: 2vh;
+    }
+    h2{font-size: 2rem;}
+    h1{font-size: 2.5rem;}
+    h3{font-size: 1.75rem;}
+}
